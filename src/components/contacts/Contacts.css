@@ -1,0 +1,205 @@
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10rem 0rem 8.4rem 0rem;
+}
+.contacts__intro {
+  font-family: "Raleway", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 4.2rem;
+  letter-spacing: 0%;
+  color: #fc9700;
+  margin-bottom: 2rem;
+}
+.contacts__title {
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.6rem;
+  letter-spacing: 0%;
+  color: #724400;
+  width: 100%;
+  max-width: 87.8rem;
+  margin-bottom: 4rem;
+}
+.contacts-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+}
+.contacts-flex {
+  display: flex;
+}
+.contacts-form__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0%;
+  color: #724400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2rem;
+}
+.contacts-form__title > div {
+  margin-top: 0.6rem;
+}
+.contacts-selects {
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.75rem 1.8rem 1.75rem 1.4rem;
+  border-radius: 8px 0px 0px 8px;
+  border: 1px solid rgb(252, 151, 0);
+  border-right: 0px;
+  color: #fca92c;
+  background-image: url(../../assets/svg/select-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: 100% 50%;
+}
+.contacts-selects option {
+  padding-top: 10px;
+}
+.contacts-number {
+  width: 25.1rem;
+  outline: none;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: #fc9700;
+  padding: 1rem 1.4rem 1rem 1rem;
+  background-color: #fff;
+  border: 1px solid rgb(252, 151, 0);
+  border-radius: 0px 8px 8px 0px;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  font-family: "Inter", sans-serif;
+  border-left: 0px;
+}
+.contacts-number::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: rgba(114, 68, 0, 0.25);
+}
+.contacts__btn {
+  background-color: #f5f5f5;
+  box-shadow: 5px 5px 13px 0px rgba(221, 221, 221, 0.9),
+    -5px -5px 10px 0px rgba(255, 255, 255, 0.9),
+    5px -5px 10px 0px rgba(221, 221, 221, 0.2),
+    -5px 5px 10px 0px rgba(221, 221, 221, 0.2),
+    inset -1px -1px 2px 0px rgba(221, 221, 221, 0.5),
+    inset 1px 1px 2px 0px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 1.4rem 2rem;
+  border: 0px;
+}
+.contacts__btn > p {
+  color: #f5a92c;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 0%;
+  margin-right: 1.2rem;
+}
+/* RESPONSIVE */
+/* SCREEN 768PX */
+@media screen and (max-width: 769px) {
+  .contacts__container {
+    padding: 5rem 0rem;
+  }
+  .contacts__intro {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    margin-bottom: 2.4rem;
+  }
+  .contacts__title {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    margin-bottom: 5rem;
+  }
+}
+/* SCREEN 618PX */
+@media screen and (max-width: 619px) {
+  .contacts__title {
+    margin-bottom: 4rem;
+  }
+  .contacts-form__title {
+    margin-right: 4rem;
+  }
+  .contacts-selects {
+    font-size: 1.6rem;
+    height: 5rem;
+    padding: 1.6rem 1.8rem 1.6rem 1.4rem;
+    background-size: 12px;
+  }
+  .contacts-number {
+    height: 5rem;
+    font-size: 1.6rem;
+    max-width: 16.1rem;
+  }
+  .contacts-number::placeholder {
+    font-size: 1.6rem;
+  }
+  .contacts__btn > p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+}
+/* SCREEN 495PX */
+@media screen and (max-width: 496px) {
+  .contacts-number {
+    width: 14rem;
+  }
+  .contacts__intro {
+    margin-bottom: 1rem;
+  }
+  .contacts__title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+/* SCREEN 465PX */
+@media screen and (max-width: 465px) {
+  .contacts__container {
+    padding: 5rem 0rem 2.5rem 0rem;
+  }
+  .contacts__intro {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+  .contacts__title {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+  }
+  .contacts-form {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  .contacts-form__title {
+    margin-bottom: 1.2rem;
+    margin-right: 0rem;
+  }
+  .contacts-number {
+    width: 100%;
+    max-width: 31.1rem;
+  }
+  .contacts__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
